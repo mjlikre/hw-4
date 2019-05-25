@@ -58,7 +58,9 @@ $(document).ready(function() {
                             if (enemyLifePoints<=0){
                                 $('.enemyChosen').detach();
                                 isEnemyChosen = true;
+                                enemyLifePoints = $('enemy-life');
                             }
+
                              
                         });
                         
