@@ -30,41 +30,42 @@
                 
                 <div class = 'col-md-2 charImage charToChoose' >
                     <img src="https://wallpapercave.com/wp/wp2090494.jpg" alt="">
-                    <p id = 'life-points'></p>
+                    <!-- <p class = 'life-points'>500</p> -->
                     <p>Naruto Uzumaki</p>
 
                 </div>
                 <div class = 'col-md-2 charImage charToChoose' >
                     <img src="https://otakukart.com/animeblog/wp-content/uploads/2017/08/IMG_20170813_094400.jpg" alt="">
-                    <p id = 'life-points'></p>
+                    <!-- <p class = 'life-points'></p> -->
                     <p>Sasuke Uchiha</p>
                     
                 </div>
                 <div class = 'col-md-2 charImage charToChoose' >
                     <img src="https://media.moddb.com/images/articles/1/201/200287/madara_uchiha.jpg" alt="">
-                    <p id = 'life-points'></p>
+                    <!-- <p class = 'life-points'></p> -->
                     <p>Madara Uchiha</p>
                 </div>
                 <div class = 'col-md-2 charImage charToChoose'>
                     <img src="https://otakukart.com/animeblog/wp-content/uploads/2017/04/images-15.jpg" alt="">
-                    <p id = 'life-points'></p>
+                    <!-- <p class = 'life-points'></p> -->
                     <p>Jiraiya</p>
                 </div>
                 <div class = 'col-md-2 charImage charToChoose'>
                     <img src="https://pm1.narvii.com/6001/82de2047b31426596bdc6d086bcec2fa60af5faf_hq.jpg" alt="">
-                    <p id = 'life-points'></p>
+                    <!-- <p class = 'life-points'></p> -->
                     <p>Minato Namikaze</p>
             
                 </div>
                 <div class = 'col-md-2 charImage charToChoose'>
                     <img src="https://i1.wp.com/www.thexboxhub.com/wp-content/uploads/2018/11/naruto-oroch.jpeg" alt="">
-                    <p id = 'life-points'></p>
+                    <!-- <p class = 'life-points'></p> -->
                     <p>Orochinaru</p>
                 </div>
             </div>
             <!-- you character -->
-            <div class = 'userChar'>
+            <div class = 'userChar' >
                 <h3 id = 'nameTags'>Your Character:</h3>
+                <p class = 'playerStatus' id = 'nameTags'>Your life point: <span class = 'life-points'></span> | Attack Power: <span class = 'attack'></span></p>
                 <div id = 'chosenOne'>
                 </div>
             </div>
@@ -87,14 +88,19 @@
 
         <div class = 'container' id='fight'>
             <h3 id = 'nameTags'>Fight Section</h3>
-            <button type= 'button'>Attack!</button>
+            <button type= 'button' id = 'attacking'>Attack!</button>
         </div>
         <!-- end of fighting control section -->
 
         <!-- defender section -->
 
         <div class = 'container'>
-            <h3 id = 'nameTags'>Defender</h3>
+            <div id = 'nameTags'>
+                    <h3>Defender</h3>
+                    <p class = 'enemyStatus'>Enemy life point: <span class = enemy-life></span> | Counter Attack: <span class = 'counter'></span></p>
+            </div>
+            
+            
             <div class = 'defender'> 
 
             </div>
