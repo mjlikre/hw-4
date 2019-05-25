@@ -1,0 +1,43 @@
+body{
+    background-image: url(https://pbs.twimg.com/media/DHxv1r2VYAA8N1p.jpg)
+}
+h1{
+    color:white;
+}
+
+.charImage img{
+    width:100%;
+    padding: 5px;
+    margin-top: 10px;
+    
+}
+
+
+
+#nameTags{
+    background-color: grey;
+}
+
+.enemyChar{
+    background-color:black;
+    border: red solid 4px;
+    color:white;
+}
+
+.chosenOne{
+    background-color: rgb(56, 233, 56);
+    border: #fff solid 4px;
+}
+
+.charToChoose{
+    background-color: #fff;
+    border: yellow solid 4px;
+}
+
+.enemyChosen{
+    background-color:rgb(97, 10, 10);
+    border: black solid 4px;
+    color: white;
+}
+    
+

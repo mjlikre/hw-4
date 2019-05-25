@@ -6,7 +6,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/main.css" />
     
 </head>
 <body>
@@ -22,35 +22,51 @@
 
         <!-- character selection section -->
 
-        <div class = 'container'>
+        <div class = 'container '>
+            <h3 class = 'choice-1' id = 'nameTags'>Choose your character</h3>
 
             <div class = 'row'>
-                <div class = 'col-md-2' id = 'char-1'>
-                    <h4>Naruto Uzumaki</h4>
+
+                
+                <div class = 'col-md-2 charImage charToChoose' >
+                    <img src="https://wallpapercave.com/wp/wp2090494.jpg" alt="">
+                    <p id = 'life-points'></p>
+                    <p>Naruto Uzumaki</p>
 
                 </div>
-                <div class = 'col-md-2' id = 'char-2'>
-                    <h4>Sasuke Uchiha</h4>
+                <div class = 'col-md-2 charImage charToChoose' >
+                    <img src="https://otakukart.com/animeblog/wp-content/uploads/2017/08/IMG_20170813_094400.jpg" alt="">
+                    <p id = 'life-points'></p>
+                    <p>Sasuke Uchiha</p>
                     
                 </div>
-                <div class = 'col-md-2' id = 'char-3'>
-                    <h4>Madara Uchiha</h4>
+                <div class = 'col-md-2 charImage charToChoose' >
+                    <img src="https://media.moddb.com/images/articles/1/201/200287/madara_uchiha.jpg" alt="">
+                    <p id = 'life-points'></p>
+                    <p>Madara Uchiha</p>
                 </div>
-                <div class = 'col-md-2' id = 'char-4'>
-                    <h4>Jiraya</h4>
+                <div class = 'col-md-2 charImage charToChoose'>
+                    <img src="https://otakukart.com/animeblog/wp-content/uploads/2017/04/images-15.jpg" alt="">
+                    <p id = 'life-points'></p>
+                    <p>Jiraiya</p>
                 </div>
-                <div class = 'col-md-2' id = 'char-5'>
-                    <h4>Minato</h4>
+                <div class = 'col-md-2 charImage charToChoose'>
+                    <img src="https://pm1.narvii.com/6001/82de2047b31426596bdc6d086bcec2fa60af5faf_hq.jpg" alt="">
+                    <p id = 'life-points'></p>
+                    <p>Minato Namikaze</p>
             
                 </div>
-                <div class = 'col-md-2' id = 'char-6'>
-                    <h4>Orochinaru</h4>
+                <div class = 'col-md-2 charImage charToChoose'>
+                    <img src="https://i1.wp.com/www.thexboxhub.com/wp-content/uploads/2018/11/naruto-oroch.jpeg" alt="">
+                    <p id = 'life-points'></p>
+                    <p>Orochinaru</p>
                 </div>
             </div>
             <!-- you character -->
             <div class = 'userChar'>
-                <h3>Your Character:</h3>
-                <div id = 'chosenOne'></div>
+                <h3 id = 'nameTags'>Your Character:</h3>
+                <div id = 'chosenOne'>
+                </div>
             </div>
  
         </div>
@@ -59,40 +75,18 @@
         <!-- enemy selection section -->
 
         <div class = 'container'>
-            <div class = 'row' >
-                <div class = 'col-md-2' id = 'enemy-1'>
-                    <h4>Naruto Uzumaki</h4>
-
-                </div>
-                <div class = 'col-md-2' id = 'enemy-2'>
-                    <h4>Sasuke Uchiha</h4>
-                    
-                </div>
-                <div class = 'col-md-2' id = 'enemy-3'>
-                    <h4>Madara Uchiha</h4>
-                </div>
-                <div class = 'col-md-2' id = 'enemy-4'>
-                    <h4>Jiraya</h4>
-                </div>
-                <div class = 'col-md-2' id = 'enemy-5'>
-                    <h4>Minato</h4>
-            
-                </div>
-                <div class = 'col-md-2' id = 'enemy-6'>
-                    <h4>Orochinaru</h4>
-                </div>
-            </div>
-            <div class = 'enemiesToAttack'>
-                <h3>Enemies to attack</h3>
+            <h3 id = 'nameTags' class= 'choice-2'>Choose your enemy</h3>
+            <div class = 'row enemies'>
             </div>
         </div>
 
         <!-- end of enemy selection section -->
 
+
         <!-- fighting control section -->
 
         <div class = 'container' id='fight'>
-            <h3>Fight Section</h3>
+            <h3 id = 'nameTags'>Fight Section</h3>
             <button type= 'button'>Attack!</button>
         </div>
         <!-- end of fighting control section -->
@@ -100,7 +94,7 @@
         <!-- defender section -->
 
         <div class = 'container'>
-            <h3>Defender</h3>
+            <h3 id = 'nameTags'>Defender</h3>
             <div class = 'defender'> 
 
             </div>
@@ -116,5 +110,7 @@
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
+    
+    <script src="./assets/logic.js"></script>
 </body>
 </html>
